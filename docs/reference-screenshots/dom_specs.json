@@ -1,0 +1,935 @@
+{
+  "home": {
+    "title": "Prediction Market Leaderboard \u2014 Top Polymarket & Kalshi Traders | predicting.top",
+    "h1": "Prediction Market Leaderboard",
+    "body": {
+      "bg": "rgb(18, 18, 18)",
+      "color": "rgb(237, 237, 237)",
+      "font": "system-ui, Arial, Helvetica, sans-serif"
+    },
+    "main": {
+      "width": 1425,
+      "padding": "0px"
+    },
+    "nav": null,
+    "tables": [
+      {
+        "width": 896,
+        "headers": [
+          {
+            "text": "#",
+            "width": 48,
+            "textAlign": "left",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "",
+            "width": 56,
+            "textAlign": "center",
+            "fontSize": "16px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "Trader",
+            "width": 243,
+            "textAlign": "left",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "Joined",
+            "width": 64,
+            "textAlign": "left",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "Score",
+            "width": 243,
+            "textAlign": "center",
+            "fontSize": "20px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "P&L",
+            "width": 243,
+            "textAlign": "right",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          }
+        ],
+        "sampleRows": [
+          {
+            "height": 57,
+            "cells": [
+              "1",
+              "",
+              "norrisfan",
+              "319d",
+              "47.4",
+              "+$84,829.03"
+            ]
+          },
+          {
+            "height": 57,
+            "cells": [
+              "2",
+              "",
+              "TeGeeLP",
+              "323d",
+              "61.8",
+              "+$78,061.82"
+            ]
+          },
+          {
+            "height": 61,
+            "cells": [
+              "3",
+              "",
+              "reval",
+              "1921d",
+              "73.7",
+              "+$71,022.97 Sports +$55K"
+            ]
+          }
+        ]
+      }
+    ],
+    "sampleButtons": [
+      {
+        "text": "Toggle theme",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "10.8px"
+      },
+      {
+        "text": "ALL",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "YTD",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "1M",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "1D",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "radius": "0px"
+      },
+      {
+        "text": "$5+",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "radius": "0px"
+      },
+      {
+        "text": "Polymarket",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "0px"
+      },
+      {
+        "text": "Kalshi",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "0px"
+      },
+      {
+        "text": "Hyperliquid",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "0px"
+      },
+      {
+        "text": "All",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "0px"
+      },
+      {
+        "text": "linked",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "No sports",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "radius": "0px"
+      },
+      {
+        "text": "No esports",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "radius": "0px"
+      },
+      {
+        "text": "Sharpe",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "Win%",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      }
+    ]
+  },
+  "polymarket": {
+    "title": "Polymarket Leaderboard \u2014 Top Polymarket Traders by Profit | predicting.top",
+    "h1": "Polymarket Leaderboard",
+    "body": {
+      "bg": "rgb(18, 18, 18)",
+      "color": "rgb(237, 237, 237)",
+      "font": "system-ui, Arial, Helvetica, sans-serif"
+    },
+    "main": {
+      "width": 1425,
+      "padding": "0px"
+    },
+    "nav": null,
+    "tables": [
+      {
+        "width": 896,
+        "headers": [
+          {
+            "text": "#",
+            "width": 48,
+            "textAlign": "left",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "",
+            "width": 56,
+            "textAlign": "center",
+            "fontSize": "16px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "Trader",
+            "width": 243,
+            "textAlign": "left",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "Joined",
+            "width": 64,
+            "textAlign": "left",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "Score",
+            "width": 243,
+            "textAlign": "center",
+            "fontSize": "20px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "P&L",
+            "width": 243,
+            "textAlign": "right",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          }
+        ],
+        "sampleRows": [
+          {
+            "height": 57,
+            "cells": [
+              "1",
+              "",
+              "norrisfan",
+              "319d",
+              "47.4",
+              "+$84,829.03"
+            ]
+          },
+          {
+            "height": 57,
+            "cells": [
+              "2",
+              "",
+              "TeGeeLP",
+              "323d",
+              "61.8",
+              "+$78,061.82"
+            ]
+          },
+          {
+            "height": 57,
+            "cells": [
+              "3",
+              "",
+              "Sonix",
+              "756d",
+              "51.1",
+              "+$62,074.82"
+            ]
+          }
+        ]
+      }
+    ],
+    "sampleButtons": [
+      {
+        "text": "Toggle theme",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "10.8px"
+      },
+      {
+        "text": "ALL",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "YTD",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "1M",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "1D",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "radius": "0px"
+      },
+      {
+        "text": "$5+",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "radius": "0px"
+      },
+      {
+        "text": "Polymarket",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "0px"
+      },
+      {
+        "text": "Kalshi",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "0px"
+      },
+      {
+        "text": "Hyperliquid",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "0px"
+      },
+      {
+        "text": "All",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "0px"
+      },
+      {
+        "text": "linked",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "No sports",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "radius": "0px"
+      },
+      {
+        "text": "No esports",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "radius": "0px"
+      },
+      {
+        "text": "Sharpe",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "Win%",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      }
+    ]
+  },
+  "kalshi": {
+    "title": "Kalshi Leaderboard \u2014 Top 1,000 Kalshi Traders by Profit | predicting.top",
+    "h1": "Kalshi Leaderboard",
+    "body": {
+      "bg": "rgb(18, 18, 18)",
+      "color": "rgb(237, 237, 237)",
+      "font": "system-ui, Arial, Helvetica, sans-serif"
+    },
+    "main": {
+      "width": 1425,
+      "padding": "0px"
+    },
+    "nav": null,
+    "tables": [
+      {
+        "width": 896,
+        "headers": [
+          {
+            "text": "#",
+            "width": 64,
+            "textAlign": "left",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "",
+            "width": 56,
+            "textAlign": "center",
+            "fontSize": "16px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "Trader",
+            "width": 388,
+            "textAlign": "left",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          },
+          {
+            "text": "P&L",
+            "width": 388,
+            "textAlign": "right",
+            "fontSize": "18px",
+            "color": "rgb(237, 237, 237)"
+          }
+        ],
+        "sampleRows": [
+          {
+            "height": 49,
+            "cells": [
+              "1",
+              "",
+              "final.lamb3899",
+              "+$8,046,815"
+            ]
+          },
+          {
+            "height": 49,
+            "cells": [
+              "2",
+              "",
+              "4thewin",
+              "+$7,742,386"
+            ]
+          },
+          {
+            "height": 49,
+            "cells": [
+              "3",
+              "",
+              "dogname",
+              "+$6,552,455"
+            ]
+          }
+        ]
+      }
+    ],
+    "sampleButtons": [
+      {
+        "text": "Toggle theme",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "10.8px"
+      },
+      {
+        "text": "ALL",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "radius": "0px"
+      },
+      {
+        "text": "1M",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "7D",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "1D",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "Non-sports",
+        "bg": "rgb(18, 18, 18)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      },
+      {
+        "text": "Show more (900 left)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(46, 46, 46)",
+        "radius": "0px"
+      }
+    ]
+  },
+  "battle": {
+    "title": "Battle of the Badges | predicting.top",
+    "h1": "Battle of the Badges",
+    "body": {
+      "bg": "rgb(18, 18, 18)",
+      "color": "rgb(237, 237, 237)",
+      "font": "system-ui, Arial, Helvetica, sans-serif"
+    },
+    "main": {
+      "width": 1425,
+      "padding": "0px"
+    },
+    "nav": null,
+    "tables": [],
+    "sampleButtons": []
+  },
+  "api-docs": {
+    "title": "Free Prediction Market API \u2014 Polymarket & Kalshi Trader Data | predicting.top",
+    "h1": "Public API",
+    "body": {
+      "bg": "rgb(18, 18, 18)",
+      "color": "rgb(237, 237, 237)",
+      "font": "system-ui, Arial, Helvetica, sans-serif"
+    },
+    "main": {
+      "width": 768,
+      "padding": "32px 16px"
+    },
+    "nav": {
+      "height": 65,
+      "bg": "rgba(0, 0, 0, 0)",
+      "borderBottom": "1px solid rgb(46, 46, 46)"
+    },
+    "tables": [],
+    "sampleButtons": [
+      {
+        "text": "Toggle theme",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "10.8px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      },
+      {
+        "text": "Copy",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(140, 140, 140)",
+        "border": "0px none rgb(140, 140, 140)",
+        "radius": "4px"
+      }
+    ]
+  },
+  "profile_polymarket": {
+    "title": "balthazar \u00b7 +$1.11M all-time | predicting.top",
+    "h1": "balthazar",
+    "body": {
+      "bg": "rgb(18, 18, 18)",
+      "color": "rgb(237, 237, 237)",
+      "font": "system-ui, Arial, Helvetica, sans-serif"
+    },
+    "main": {
+      "width": 896,
+      "padding": "32px 16px"
+    },
+    "nav": {
+      "height": 65,
+      "bg": "rgba(0, 0, 0, 0)",
+      "borderBottom": "1px solid rgb(46, 46, 46)"
+    },
+    "tables": [],
+    "sampleButtons": [
+      {
+        "text": "Toggle theme",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "10.8px"
+      },
+      {
+        "text": "Light",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "4px"
+      },
+      {
+        "text": "Black",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "4px"
+      },
+      {
+        "text": "Share",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Copy image",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Download",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "All time",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "4px"
+      },
+      {
+        "text": "30D",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "4px"
+      },
+      {
+        "text": "7D",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "4px"
+      },
+      {
+        "text": "Share",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Copy image",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Download",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Share",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Copy image",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Download",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      }
+    ]
+  },
+  "profile_kalshi": {
+    "title": "ProbabilityDuck \u00b7 +$1.11M all-time | predicting.top",
+    "h1": "ProbabilityDuck",
+    "body": {
+      "bg": "rgb(18, 18, 18)",
+      "color": "rgb(237, 237, 237)",
+      "font": "system-ui, Arial, Helvetica, sans-serif"
+    },
+    "main": {
+      "width": 896,
+      "padding": "32px 16px"
+    },
+    "nav": {
+      "height": 65,
+      "bg": "rgba(0, 0, 0, 0)",
+      "borderBottom": "1px solid rgb(46, 46, 46)"
+    },
+    "tables": [],
+    "sampleButtons": [
+      {
+        "text": "Toggle theme",
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "10.8px"
+      },
+      {
+        "text": "Light",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "4px"
+      },
+      {
+        "text": "Black",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "4px"
+      },
+      {
+        "text": "Share",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Copy image",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Download",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "All time",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "4px"
+      },
+      {
+        "text": "30D",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "4px"
+      },
+      {
+        "text": "7D",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "4px"
+      },
+      {
+        "text": "Share",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Copy image",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Download",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Share",
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Copy image",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      },
+      {
+        "text": "Download",
+        "bg": "rgb(51, 51, 51)",
+        "color": "rgb(237, 237, 237)",
+        "border": "0px none rgb(237, 237, 237)",
+        "radius": "12.8px"
+      }
+    ]
+  }
+}
