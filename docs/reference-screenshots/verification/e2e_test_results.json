@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-17 22:35:39",
+  "timestamp": "2026-11-17 22:58:25",
   "total": 29,
   "passed": 29,
   "failed": 0,
@@ -18,7 +18,7 @@
     {
       "name": "Home Table Initial Load",
       "passed": true,
-      "details": "Rendered 410 rows"
+      "details": "Rendered 412 rows"
     },
     {
       "name": "Home Search Filter",
@@ -28,7 +28,7 @@
     {
       "name": "Home Search Clear",
       "passed": true,
-      "details": "Restored to 410 rows"
+      "details": "Restored to 412 rows"
     },
     {
       "name": "Home Platform Filter (Kalshi)",
@@ -43,7 +43,7 @@
     {
       "name": "Polymarket Rows Loaded",
       "passed": true,
-      "details": "Rendered 261 rows"
+      "details": "Rendered 263 rows"
     },
     {
       "name": "Polymarket SEO FAQs Present",

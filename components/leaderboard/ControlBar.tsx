@@ -77,6 +77,17 @@ export function ControlBar({
         : "text-muted-foreground/80 hover:text-foreground hover:bg-muted/30"
     }`;
 
+  // Always compute effective displayed count based strictly on the active entryLimit
+  const effectiveDisplayedCount = React.useMemo(() => {
+    if (entryLimit === "all") return filteredCount;
+    if (entryLimit === "custom") return Math.min(customLimit, filteredCount);
+    const parsed = parseInt(entryLimit, 10);
+    if (!isNaN(parsed) && parsed > 0) {
+      return Math.min(parsed, filteredCount);
+    }
+    return displayedCount !== undefined ? displayedCount : filteredCount;
+  }, [displayedCount, entryLimit, customLimit, filteredCount]);
+
   return (
     <div className="w-full max-w-4xl mx-auto space-y-3 mb-4">
       {/* Search Input Row, Entry Limit Selector & Trader Count */}
@@ -140,7 +151,7 @@ export function ControlBar({
         </div>
 
         <div className="text-xs sm:text-sm text-muted-foreground font-mono">
-          {displayedCount !== undefined ? displayedCount : filteredCount} of {totalCount} traders
+          {effectiveDisplayedCount} of {totalCount} traders
         </div>
       </div>
 

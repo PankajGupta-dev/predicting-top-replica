@@ -74,6 +74,36 @@ export function LeaderboardView({
   const [entryLimit, setEntryLimit] = useState<string>("all");
   const [customLimit, setCustomLimit] = useState<number>(100);
 
+  // Synchronize entry limit with localStorage on client mount
+  React.useEffect(() => {
+    try {
+      const saved = localStorage.getItem("predicting_entry_limit");
+      if (saved) {
+        setEntryLimit(saved);
+      }
+      const savedCustom = localStorage.getItem("predicting_custom_limit");
+      if (savedCustom) {
+        setCustomLimit(parseInt(savedCustom, 10) || 100);
+      }
+    } catch {
+      // LocalStorage unavailable in certain private browsing contexts
+    }
+  }, []);
+
+  const handleEntryLimitChange = useCallback((newLimit: string) => {
+    setEntryLimit(newLimit);
+    try {
+      localStorage.setItem("predicting_entry_limit", newLimit);
+    } catch {}
+  }, []);
+
+  const handleCustomLimitChange = useCallback((newCustom: number) => {
+    setCustomLimit(newCustom);
+    try {
+      localStorage.setItem("predicting_custom_limit", newCustom.toString());
+    } catch {}
+  }, []);
+
   // Map UI period string to API period param
   const getApiPeriod = (uiPeriod: string): string => {
     if (uiPeriod === "1m") return "30d";
@@ -346,9 +376,9 @@ export function LeaderboardView({
         totalCount={totalCount}
         displayedCount={displayedCount}
         entryLimit={entryLimit}
-        onEntryLimitChange={setEntryLimit}
+        onEntryLimitChange={handleEntryLimitChange}
         customLimit={customLimit}
-        onCustomLimitChange={setCustomLimit}
+        onCustomLimitChange={handleCustomLimitChange}
         isKalshiOnly={isKalshi}
         period={period}
         onPeriodChange={handlePeriodChange}
