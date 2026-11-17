@@ -1,32 +1,39 @@
-# dependencies
+# Dependencies
+node_modules/
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
+# Testing
 /coverage
 
-# next.js
+# Next.js Build Output
+.next/
 /.next/
 /out/
-
-# production
+dist/
+build/
 /build
 
-# misc
+# Vercel Deployment Metadata
+.vercel/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.production
+.env*.local
+.env*.production
+
+# Miscellaneous
 .DS_Store
 *.pem
 
-# debug
+# Debug Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
-.env
-
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
-
