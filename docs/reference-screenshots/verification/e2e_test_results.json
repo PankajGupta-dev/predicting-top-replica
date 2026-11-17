@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-17 21:55:48",
+  "timestamp": "2026-11-17 22:35:39",
   "total": 29,
   "passed": 29,
   "failed": 0,
@@ -18,7 +18,7 @@
     {
       "name": "Home Table Initial Load",
       "passed": true,
-      "details": "Rendered 409 rows"
+      "details": "Rendered 410 rows"
     },
     {
       "name": "Home Search Filter",
@@ -28,12 +28,12 @@
     {
       "name": "Home Search Clear",
       "passed": true,
-      "details": "Restored to 409 rows"
+      "details": "Restored to 410 rows"
     },
     {
       "name": "Home Platform Filter (Kalshi)",
       "passed": true,
-      "details": "Filtered to 99 Kalshi traders"
+      "details": "Filtered to 100 Kalshi traders"
     },
     {
       "name": "Polymarket Route H1",

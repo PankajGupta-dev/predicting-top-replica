@@ -70,6 +70,10 @@ export function LeaderboardView({
   // Progressive pagination (for Kalshi)
   const [visibleCount, setVisibleCount] = useState<number>(100);
 
+  // Entry limit selector ("all", "10", "25", "50", "100", "200", "500", "custom")
+  const [entryLimit, setEntryLimit] = useState<string>("all");
+  const [customLimit, setCustomLimit] = useState<number>(100);
+
   // Map UI period string to API period param
   const getApiPeriod = (uiPeriod: string): string => {
     if (uiPeriod === "1m") return "30d";
@@ -279,11 +283,27 @@ export function LeaderboardView({
     return list;
   }, [isKalshi, currentKalshiTraders, searchQuery, noSports, sortBy, sortDirection]);
 
+  // Effective numeric limit for entries
+  const effectiveLimit = useMemo(() => {
+    if (entryLimit === "all") return Infinity;
+    if (entryLimit === "custom") return Math.max(1, customLimit);
+    const parsed = parseInt(entryLimit, 10);
+    return isNaN(parsed) ? Infinity : parsed;
+  }, [entryLimit, customLimit]);
+
+  // Displayed traders for Home / Polymarket
+  const displayedTraders = useMemo(() => {
+    if (isKalshi) return [];
+    if (effectiveLimit === Infinity) return filteredTraders;
+    return filteredTraders.slice(0, effectiveLimit);
+  }, [isKalshi, filteredTraders, effectiveLimit]);
+
   // Progressive slice for Kalshi
   const displayedKalshiTraders = useMemo(() => {
     if (!isKalshi) return [];
-    return filteredKalshiTraders.slice(0, visibleCount);
-  }, [isKalshi, filteredKalshiTraders, visibleCount]);
+    const limit = entryLimit === "all" ? visibleCount : effectiveLimit;
+    return filteredKalshiTraders.slice(0, limit);
+  }, [isKalshi, filteredKalshiTraders, visibleCount, entryLimit, effectiveLimit]);
 
   // Headings
   const title = isKalshi
@@ -302,6 +322,9 @@ export function LeaderboardView({
   const filteredCount = isKalshi
     ? filteredKalshiTraders.length
     : filteredTraders.length;
+  const displayedCount = isKalshi
+    ? Math.min(displayedKalshiTraders.length, filteredCount)
+    : Math.min(displayedTraders.length, filteredCount);
 
   return (
     <div className="w-full">
@@ -321,6 +344,11 @@ export function LeaderboardView({
         onSearchClear={() => setSearchQuery("")}
         filteredCount={filteredCount}
         totalCount={totalCount}
+        displayedCount={displayedCount}
+        entryLimit={entryLimit}
+        onEntryLimitChange={setEntryLimit}
+        customLimit={customLimit}
+        onCustomLimitChange={setCustomLimit}
         isKalshiOnly={isKalshi}
         period={period}
         onPeriodChange={handlePeriodChange}
@@ -365,7 +393,7 @@ export function LeaderboardView({
                 />
               );
             })
-          : filteredTraders.map((trader, index) => {
+          : displayedTraders.map((trader, index) => {
               const pnl = trader.stats?.pnl ?? trader.allTimePnl ?? 0;
               const categoryTag = trader.day_mover
                 ? `${trader.day_mover.label} ${formatUSD(trader.day_mover.change, {

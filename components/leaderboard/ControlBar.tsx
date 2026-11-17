@@ -13,6 +13,11 @@ export interface ControlBarProps {
   onSearchClear: () => void;
   filteredCount: number;
   totalCount: number;
+  displayedCount?: number;
+  entryLimit?: string;
+  onEntryLimitChange?: (limit: string) => void;
+  customLimit?: number;
+  onCustomLimitChange?: (custom: number) => void;
   isKalshiOnly?: boolean;
   period: string;
   onPeriodChange: (period: string) => void;
@@ -36,6 +41,11 @@ export function ControlBar({
   onSearchClear,
   filteredCount,
   totalCount,
+  displayedCount,
+  entryLimit = "all",
+  onEntryLimitChange,
+  customLimit = 100,
+  onCustomLimitChange,
   isKalshiOnly = false,
   period,
   onPeriodChange,
@@ -69,29 +79,68 @@ export function ControlBar({
 
   return (
     <div className="w-full max-w-4xl mx-auto space-y-3 mb-4">
-      {/* Search Input Row & Trader Count */}
+      {/* Search Input Row, Entry Limit Selector & Trader Count */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        <div className="relative flex-1 max-w-sm">
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => onSearchChange(e.target.value)}
-            placeholder={isKalshiOnly ? "Search Kalshi traders..." : "Search traders..."}
-            className="w-full bg-input/10 dark:bg-[#1A1A1A] border border-border/80 rounded-md px-3 py-1.5 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring transition-colors"
-          />
-          {searchQuery.length > 0 && (
-            <button
-              onClick={onSearchClear}
-              type="button"
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-muted-foreground hover:text-foreground font-medium px-1"
-            >
-              Clear
-            </button>
+        <div className="flex flex-wrap items-center gap-2 flex-1">
+          <div className="relative flex-1 max-w-sm">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => onSearchChange(e.target.value)}
+              placeholder={isKalshiOnly ? "Search Kalshi traders..." : "Search traders..."}
+              className="w-full bg-input/10 dark:bg-[#1A1A1A] border border-border/80 rounded-md px-3 py-1.5 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring transition-colors"
+            />
+            {searchQuery.length > 0 && (
+              <button
+                onClick={onSearchClear}
+                type="button"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-muted-foreground hover:text-foreground font-medium px-1"
+              >
+                Clear
+              </button>
+            )}
+          </div>
+
+          {/* Entry Limit Selector beside search */}
+          {onEntryLimitChange && (
+            <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+              <span className="hidden sm:inline">Show:</span>
+              <select
+                value={entryLimit || "all"}
+                onChange={(e) => onEntryLimitChange(e.target.value)}
+                aria-label="Select entries to show"
+                className="bg-input/10 dark:bg-[#1A1A1A] border border-border/80 rounded-md px-2 py-1.5 text-xs sm:text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-ring transition-colors cursor-pointer"
+              >
+                <option value="10" className="bg-background text-foreground">10</option>
+                <option value="25" className="bg-background text-foreground">25</option>
+                <option value="50" className="bg-background text-foreground">50</option>
+                <option value="100" className="bg-background text-foreground">100</option>
+                <option value="200" className="bg-background text-foreground">200</option>
+                <option value="500" className="bg-background text-foreground">500</option>
+                <option value="all" className="bg-background text-foreground">All</option>
+                <option value="custom" className="bg-background text-foreground">Custom...</option>
+              </select>
+              {entryLimit === "custom" && (
+                <input
+                  type="number"
+                  min={1}
+                  max={totalCount || 1000}
+                  value={customLimit || ""}
+                  onChange={(e) => {
+                    const val = parseInt(e.target.value, 10);
+                    onCustomLimitChange?.(isNaN(val) ? 1 : Math.max(1, val));
+                  }}
+                  aria-label="Custom entry count"
+                  className="w-16 bg-input/10 dark:bg-[#1A1A1A] border border-border/80 rounded-md px-2 py-1.5 text-xs sm:text-sm text-foreground text-center focus:outline-none focus:ring-1 focus:ring-ring"
+                  placeholder="Qty"
+                />
+              )}
+            </div>
           )}
         </div>
 
         <div className="text-xs sm:text-sm text-muted-foreground font-mono">
-          {filteredCount} of {totalCount} traders
+          {displayedCount !== undefined ? displayedCount : filteredCount} of {totalCount} traders
         </div>
       </div>
 
