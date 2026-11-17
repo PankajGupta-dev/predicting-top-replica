@@ -63,10 +63,14 @@ export function formatPercent(
 /**
  * Truncate EVM wallet addresses to 0x1234...5678 format.
  */
-export function truncateAddress(address: string | null | undefined): string {
+export function truncateAddress(
+  address: string | null | undefined,
+  startChars: number = 6,
+  endChars: number = 4
+): string {
   if (!address) return "–";
-  if (address.length <= 10) return address;
-  return `${address.slice(0, 6)}...${address.slice(-4)}`;
+  if (address.length <= startChars + endChars) return address;
+  return `${address.slice(0, startChars)}...${address.slice(-endChars)}`;
 }
 
 /**

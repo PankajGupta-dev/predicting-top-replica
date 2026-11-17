@@ -78,6 +78,21 @@ export async function getKalshiHistory(username: string): Promise<ProfitHistoryP
   }
 }
 
+export async function getTraderHistory(wallet: string): Promise<ProfitHistoryPoint[]> {
+  try {
+    const res = await fetchAPI<{ history: ProfitHistoryPoint[] }>(`/api/trader/${encodeURIComponent(wallet)}/history`, {
+      revalidate: 300,
+      tags: [`trader-history-${wallet}`],
+    });
+    return res.history || [];
+  } catch (err) {
+    if (err instanceof PredictingAPIError && (err.statusCode === 404 || err.statusCode === 400)) {
+      return [];
+    }
+    throw err;
+  }
+}
+
 export async function getKalshiCategories(username: string): Promise<CategoryPerformance[]> {
   try {
     const res = await fetchAPI<KalshiCategoriesResponse>(`/api/kalshi/${encodeURIComponent(username)}/categories`, {

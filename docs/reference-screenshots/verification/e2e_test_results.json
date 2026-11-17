@@ -1,0 +1,154 @@
+{
+  "timestamp": "2026-11-17 21:55:48",
+  "total": 29,
+  "passed": 29,
+  "failed": 0,
+  "success_rate": "100.0%",
+  "tests": [
+    {
+      "name": "Home Title and Headers",
+      "passed": true,
+      "details": "Title: Prediction Market Leaderboard \u2014 Top Polymarket & Kalshi Traders | predicting.top"
+    },
+    {
+      "name": "Home Timestamp & Profit Badge",
+      "passed": true,
+      "details": "Contains P&L updated & Today profit"
+    },
+    {
+      "name": "Home Table Initial Load",
+      "passed": true,
+      "details": "Rendered 409 rows"
+    },
+    {
+      "name": "Home Search Filter",
+      "passed": true,
+      "details": "Filtered to 1 row; Clear button visible: True"
+    },
+    {
+      "name": "Home Search Clear",
+      "passed": true,
+      "details": "Restored to 409 rows"
+    },
+    {
+      "name": "Home Platform Filter (Kalshi)",
+      "passed": true,
+      "details": "Filtered to 99 Kalshi traders"
+    },
+    {
+      "name": "Polymarket Route H1",
+      "passed": true,
+      "details": "H1: Polymarket Leaderboard"
+    },
+    {
+      "name": "Polymarket Rows Loaded",
+      "passed": true,
+      "details": "Rendered 261 rows"
+    },
+    {
+      "name": "Polymarket SEO FAQs Present",
+      "passed": true,
+      "details": "Contains About the Polymarket Leaderboard"
+    },
+    {
+      "name": "Kalshi Route H1 & Navigation",
+      "passed": true,
+      "details": "H1: Kalshi Leaderboard, All platforms button: True"
+    },
+    {
+      "name": "Kalshi Progressive Pagination Initial",
+      "passed": true,
+      "details": "Initial rows: 100, Button: Show more (900 left)"
+    },
+    {
+      "name": "Kalshi Progressive Pagination Click",
+      "passed": true,
+      "details": "Expanded from 100 to 200 rows"
+    },
+    {
+      "name": "Polymarket Profile Header",
+      "passed": true,
+      "details": "Trader name: balthazar"
+    },
+    {
+      "name": "Polymarket P&L Chart Rendered",
+      "passed": true,
+      "details": "SVG curve line present"
+    },
+    {
+      "name": "Polymarket Positions & Trades Tab",
+      "passed": true,
+      "details": "Open Positions tabs rendered"
+    },
+    {
+      "name": "Polymarket Share Cards Deck",
+      "passed": true,
+      "details": "Share month + all-time present"
+    },
+    {
+      "name": "Polymarket Smart Score Card",
+      "passed": true,
+      "details": "Smart Score breakdown present"
+    },
+    {
+      "name": "Kalshi Profile Header",
+      "passed": true,
+      "details": "Name: ProbabilityDuck, Kalshi badge present"
+    },
+    {
+      "name": "Kalshi Category Distribution Card",
+      "passed": true,
+      "details": "P&L by Category card rendered with bars"
+    },
+    {
+      "name": "Battle Header & Contenders",
+      "passed": true,
+      "details": "Contenders: @25usdc vs @PredMTrader"
+    },
+    {
+      "name": "Battle Dual Line Chart",
+      "passed": true,
+      "details": "Both contender curves rendered"
+    },
+    {
+      "name": "Battle Host Branding",
+      "passed": true,
+      "details": "Hosted by HiveLiveHQ present"
+    },
+    {
+      "name": "API Docs H1 & Code Example",
+      "passed": true,
+      "details": "Example snippet present"
+    },
+    {
+      "name": "API Docs All 14 Endpoints",
+      "passed": true,
+      "details": "Found 14 of 14 endpoint cards"
+    },
+    {
+      "name": "Submit Page H1 & Form Submission",
+      "passed": true,
+      "details": "Submission Received confirmation displayed"
+    },
+    {
+      "name": "Terms of Service Content",
+      "passed": true,
+      "details": "All 8 numbered legal sections present"
+    },
+    {
+      "name": "Theme Toggle & LocalStorage Persistence",
+      "passed": true,
+      "details": "Switched to light, persisted after reload (light)"
+    },
+    {
+      "name": "404 Trader Not Found Screen",
+      "passed": true,
+      "details": "Friendly 404 with Return to Leaderboard link"
+    },
+    {
+      "name": "Zero Console Fatal Errors",
+      "passed": true,
+      "details": "Encountered 0 console errors"
+    }
+  ]
+}
